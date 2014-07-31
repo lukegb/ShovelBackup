@@ -17,11 +17,10 @@ type Defaults struct {
 
 func GetCFG() Defaults {
 	Ret := Defaults{
-		DBHost:    "localhost:3306",
-		DBName:    "shovel",
-		DBUser:    "root",
-		DBPass:    "",
-		Buffering: false,
+		DBHost: "localhost:3306",
+		DBName: "shovel",
+		DBUser: "root",
+		DBPass: "",
 	}
 	cu, e := user.Current()
 	if e != nil {
